@@ -27,7 +27,8 @@ app.get('/', (req, res) => {
   const city = req.query.city || 'London';
   getWeather(city)
   .then(json => {
-    res.render('index.pug', { city, result:JSON.stringify(json, null, 2) });
+    const result = JSON.stringify(json, null, 2);
+    res.render('index.pug', { city, result });
   })
 });
 
