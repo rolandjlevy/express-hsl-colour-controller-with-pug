@@ -12,6 +12,10 @@ body {
   color: #fff;
 }
 
+h1 {
+  text-align: center;
+}
+
 .v-center, .h-center {
   display: flex;
   align-items: center;
@@ -43,6 +47,7 @@ body {
   width: 50vmin;
   height: 50vmin;
   border: 1px solid #aaa;
+  padding: 5px;
   background-color: hsl(
     var(--h), 
     calc(var(--s) * 1%), 
@@ -53,7 +58,9 @@ body {
 .block > span {
   flex-direction: column;
   color: var(--display-color);
-  font-size: 1.25rem;
+  font-size: calc(0.675rem + 2vmin);
+  font-weight: bold;
+  text-align: center;
 }
 
 .m-b-20 {
