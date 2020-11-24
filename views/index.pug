@@ -1,21 +1,34 @@
-- let cities = ['Berlin', 'Tokyo', 'Paris', 'London']
+- colours = { h: { prop:'h', name: 'Hue', max: 360 }, s: { prop:'s', name: 'Saturation', max: 100 }, l: { prop:'l',  name: 'Lightness', max: 100 }};
 doctype(html)
 html
+
   head
     title Weather App
     meta(name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=no')
     link(rel='stylesheet', href='https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700&display=swap')  
     style
       include ../public/style.css
-    script
-      include ../public/script.js
 
   body
-    .container
+    main.container.v-center
       header
-        h1 Weather in #{city}
-        if result
-          p #{result}
-        each city in cities
-          a(href=`/?city=${city}`) #{city}
-          span |
+        h1 HSL colour controller
+      section.sliders.h-center.m-b-20
+        each key in Object.keys(colours)
+          .v-center
+            h3.m-5 #{colours[key].name}
+            input(
+              type='range'
+              name=`--${colours[key].prop}`
+              class='slider'
+              value=`${colours[key].max / 2}`
+              min="0" 
+              max=`${colours[key].max}`
+            )
+            label #{colours[key].max / 2}
+        
+      .block.v-center.m-b-20
+        span
+
+    script
+      include ../public/script.js
