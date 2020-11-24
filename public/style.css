@@ -35,8 +35,8 @@ body {
   flex-direction: column;
 }
 
-.sliders > div {
-  margin: 10px;
+.sliders > div:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 .block {
@@ -58,6 +58,10 @@ body {
 
 .m-b-20 {
   margin-bottom: 20px;
+}
+
+.m-0 {
+  margin: 0;
 }
 
 .m-5 {
