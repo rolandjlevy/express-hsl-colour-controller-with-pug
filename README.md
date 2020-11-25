@@ -23,5 +23,5 @@ colours = {
 ---
 
 ### Further reading on HSL
-- A great [css-tricks.com](https://css-tricks.com) article: 
+- A great css-tricks.com article: 
 [HSL() / HSLa() is great for programmatic color control](https://css-tricks.com/hsl-hsla-is-great-for-programmatic-color-control)
