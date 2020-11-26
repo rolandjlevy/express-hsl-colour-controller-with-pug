@@ -16,6 +16,10 @@ h1 {
   text-align: center;
 }
 
+h3 {
+  font-size: 1.375rem;
+}
+
 .v-center, .h-center {
   display: flex;
   align-items: center;
