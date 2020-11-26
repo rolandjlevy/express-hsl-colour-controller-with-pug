@@ -2,7 +2,7 @@
   --h: 180;
   --s: 50;
   --l: 50;
-  --display-color: #000;
+  --display-colour: #000;
 }
 
 body {
@@ -35,18 +35,10 @@ h1 {
   margin: 0 auto;
 }
 
-.sliders {
-  flex-direction: column;
-}
-
-.sliders > div:not(:last-child) {
-  margin-bottom: 10px;
-}
-
 .block {
   width: 50vmin;
   height: 50vmin;
-  border: 1px solid #aaa;
+  border: 3px solid #333;
   padding: 5px;
   background-color: hsl(
     var(--h), 
@@ -57,10 +49,11 @@ h1 {
 
 .block > span {
   flex-direction: column;
-  color: var(--display-color);
+  color: var(--display-colour);
   font-size: calc(0.675rem + 2vmin);
-  font-weight: bold;
+  font-weight: normal;
   text-align: center;
+  line-height: 1.5;
 }
 
 .m-b-20 {

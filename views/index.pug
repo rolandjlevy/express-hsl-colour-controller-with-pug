@@ -3,11 +3,13 @@ doctype(html)
 html
 
   head
-    title Weather App
+    title HSL colour controller
     meta(name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=no')
     link(rel='stylesheet', href='https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700&display=swap')  
     style
       include ../public/style.css
+    style
+      include ../public/slider.css
 
   body
     main.container.v-center
@@ -15,20 +17,22 @@ html
         h1 HSL colour controller
       section.sliders.h-center.m-b-20
         each key in Object.keys(colours)
-          .v-center
+          div.v-center
             h3.m-5 #{colours[key].name}
             input(
               type='range'
-              name=`--${colours[key].prop}`
               class='slider'
+              name=`--${colours[key].prop}`
               value=`${colours[key].max / 2}`
-              min="0" 
               max=`${colours[key].max}`
+              min="0" 
             )
             label #{colours[key].max / 2}
         
       .block.v-center.m-b-20
         span
 
+    
+    script(src='https://www.w3schools.com/lib/w3color.js') 
     script
-      include ../public/script.js
+      include ../public/script.js 
