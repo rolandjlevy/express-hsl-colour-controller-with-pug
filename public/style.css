@@ -7,7 +7,8 @@
 
 body {
   font-family: 'Open Sans', sans-serif;
-  margin: 30px;
+  margin: 20px 0;
+  padding: 0;
   background-color: #000;
   color: #fff;
 }
@@ -70,4 +71,40 @@ h3 {
 
 .m-5 {
   margin: 5px;
+}
+
+.footer-wrapper {
+  position: relative;
+  bottom: 0;
+  max-width: 640px;
+  display: flex;
+  justify-content: center;
+  width: 75vw;
+}
+
+footer {
+  color: #aaa;
+  font-size: 0.875rem;
+  height: 50px;
+  margin: 0;
+  text-align: center;
+}
+
+footer a {
+  color: #aaa;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+footer a:hover {
+  color: #fff;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.new-tab-icon::after {
+  font-family: "Font Awesome 5 Free"; 
+  font-weight: 900; 
+  content: "\f35d";
+  margin-left: 5px;
 }

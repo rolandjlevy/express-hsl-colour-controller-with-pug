@@ -1,3 +1,4 @@
+- const year = new Date().getFullYear();
 - colours = { h: { prop:'h', name: 'Hue', max: 360 }, s: { prop:'s', name: 'Saturation', max: 100 }, l: { prop:'l',  name: 'Lightness', max: 100 }};
 doctype html
 html
@@ -5,7 +6,8 @@ html
   head
     title HSL colour controller
     meta(name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=no')
-    link(rel='stylesheet', href='https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700&display=swap')  
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700&display=swap')
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css")
     style
       include ../public/style.css
     style
@@ -31,7 +33,11 @@ html
         
       .block.v-center.m-b-20
         span
-
+      
+      section.footer-wrapper
+        footer
+          p.text-center &copy; Roland Levy #{year} 
+            a(href="https://rolandlevy.co.uk", class="new-tab-icon", target="_blank") see more of my projects
     
     script(src='https://www.w3schools.com/lib/w3color.js') 
     script
