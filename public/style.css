@@ -3,6 +3,8 @@
   --s: 50;
   --l: 50;
   --display-colour: #000;
+  --grey-light: #b6afc7;
+  --grey-lightest: #e4ddf1;
 }
 
 body {
@@ -83,7 +85,7 @@ h3 {
 }
 
 footer {
-  color: #aaa;
+  color: var(--grey-light);
   font-size: 0.875rem;
   height: 50px;
   margin: 0;
@@ -91,13 +93,13 @@ footer {
 }
 
 footer a {
-  color: #aaa;
+  color: var(--grey-light);
   font-weight: bold;
   transition: all 0.2s ease;
 }
 
 footer a:hover {
-  color: #fff;
+  color: var(--grey-lightest);
   transition: all 0.2s ease;
   text-decoration: none;
 }
