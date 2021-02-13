@@ -2,9 +2,9 @@
 
 A dynamic HSL colour controller
 
-- Made with [express.js](https://expressjs.com) and [pug](https://pugjs.org) - a template engine for Node
-- Fully responsive and mobile friendly
+- Made with [node.js](https://nodejs.org), [express.js](https://expressjs.com) and [pug](https://pugjs.org) - a template engine for Node
 - Using the [W3Color JavaScript Library](https://www.w3schools.com/lib/w3color.js) to convert the HSL values to RGB and HEX
+- Fully responsive and mobile friendly
 - HSL values are controlled by the range inputs which update the CSS variables, which in turn display the colour and values in real time
 - The `colours` object, in `views/index.pug` is used to render the range inputs
 ```js
