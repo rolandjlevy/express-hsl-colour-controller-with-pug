@@ -44,3 +44,4 @@ each key in Object.keys(colours)
 - A great article from css-tricks.com: 
 [HSL() / HSLa() is great for programmatic color control](https://css-tricks.com/hsl-hsla-is-great-for-programmatic-color-control)
 - A useful [colours tutorial](https://www.w3schools.com/colors/default.asp) from w3schools.com
+- Font and Text Properties in CSS vs CSS3: [https://www.interviewbit.com/blog/difference-between-css-and-css3/](https://www.interviewbit.com/blog/difference-between-css-and-css3/)
